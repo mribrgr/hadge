@@ -40,5 +40,4 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         GIST_ID: ${{ secrets.GIST_ID }}
       run: |
-        tree .
         ruby .github/scripts/hadge.rb -t $GH_TOKEN -g $GIST_ID health/workouts/$(date +%Y).csv
