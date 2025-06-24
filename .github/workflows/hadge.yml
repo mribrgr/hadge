@@ -6,6 +6,8 @@ on:
     paths:
     - 'workouts/**.csv'
     - '.github/**'
+  schedule:
+  - cron: "0 */6 * * *"
 
 jobs:
   build:
